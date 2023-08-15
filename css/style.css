@@ -16,7 +16,7 @@ div.full-screen {
     margin: 0;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
     div.full-screen {
         display: flex;
         flex-direction: row;
@@ -39,17 +39,17 @@ div.top-part {
     border-radius: 0 0 5% 5%; 
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
     div.top-part {
-        width:20%;
-        height: 50%;
+        width:40%;
+        height: 60%;
         border-radius: 5%;
         justify-items: center;
     }
 } 
 
 div.top-part h1 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
     margin: 0;
     padding: 10% 0;
@@ -111,21 +111,22 @@ div.bottom-part {
       
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
     div.bottom-part {
-        height: 50%;
-        width:20%;
+        height: 60%;
+        width:40%;
         border-radius: 0 5% 5% 0;
         box-shadow: 1rem 1rem 5rem lightgray; /*box shadow*/
         position: relative;
-        left: -0.35%;
+        left: -1%;
         z-index: -1;
+        /* border: 1px solid red; */
     }
 } 
 
 div.bottom-part h3{
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     position: relative;
 }
@@ -136,7 +137,7 @@ div.bottom-part .summary-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 1rem;
     font-weight: bold;
     position: relative;
     top: -3%;
@@ -146,7 +147,7 @@ div.bottom-part .summary-container .line {
     display: flex;
     align-items: center;
     border-radius: 0.75rem;
-    gap: 1.5rem;
+    gap: 1rem;
     padding:0 1rem;
 }
 
@@ -172,8 +173,7 @@ div.bottom-part footer {
 div.bottom-part footer .button {
     width: 100%;
     height:90%;
-    background-color: hsl(224, 30%, 27%);
-    
+    background-color: hsl(224, 30%, 27%);    
     border-radius: 5rem; 
     display: flex;
     flex-direction: column;
